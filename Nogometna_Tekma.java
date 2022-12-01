@@ -11,14 +11,23 @@ class Nogometna_Tekma{
             
             System.out.println("Enter and event.");
 
-            String vnos1 = new String(sc.nextLine());
+            String vnos1 = sc.nextLine();
             
+            String dogodek;
+            dogodek = vnos1;
+            String[] skupaj ={};
+
+
+            if (vnos1.equalsIgnoreCase("konec")){
+                skupaj = dogodek.split("-");
+                System.out.println(skupaj);
+            }
             
             //String [] dogodek = vnos1.split("-");
-            String dogodek = new String();
-            dogodek.append((vnos1.split("-"))[0]);
-            String skupaj = new String (dogodek[0]+"("+dogodek[1]+"')");   
-            System.out.println(skupaj);              
+                    // String dogodek;
+                    // dogodek.append((vnos1.split("-"))[0]);
+                    // String skupaj = new String (dogodek[0]+"("+dogodek[1]+"')");   
+                    // System.out.println(skupaj);              
             
             // if(vnos1.equalsIgnoreCase("konec")){
                 //for (int i = 0; i<= skupaj.length; i++){
